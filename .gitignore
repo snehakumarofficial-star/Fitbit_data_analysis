@@ -1,5 +1,121 @@
-data/Fitabase Data 4.12.16-5.12.16/
-_pychache_/*.csv
-**/*.csv
+# ==============================================================================
+# 1. Operating System Files (macOS & Windows)
+# ==============================================================================
 .DS_Store
-**/.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ==============================================================================
+# 2. Datasets & Raw Outputs (Keep Large Files Out of Git)
+# ==============================================================================
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.jsonl
+*.zip
+*.tar.gz
+*.gz
+*.7z
+
+# Data directories (root and nested)
+data/
+datasets/
+raw_data/
+processed_data/
+
+# ==============================================================================
+# 3. Jupyter Notebook Checkpoints & Metadata
+# ==============================================================================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+*-checkpoint.ipynb
+
+# ==============================================================================
+# 4. Python Bytecode, Caches & Builds
+# ==============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / Packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ==============================================================================
+# 5. Virtual Environments & Package Managers
+# ==============================================================================
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Conda
+conda-meta/
+
+# Poetry / Pipenv
+Pipfile.lock
+poetry.lock
+
+# ==============================================================================
+# 6. IDEs & Text Editors
+# ==============================================================================
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# PyCharm / JetBrains
+.idea/
+
+# ==============================================================================
+# 7. Environment Variables, Secrets & API Keys
+# ==============================================================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+kaggle.json
+
+# ==============================================================================
+# 8. Testing, Coverage & Profiling
+# ==============================================================================
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.hypothesis/
+.mypy_cache/
+.ruff_cache/
