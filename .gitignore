@@ -1,1 +1,5 @@
 data/Fitabase Data 4.12.16-5.12.16/
+_pychache_/*.csv
+**/*.csv
+.DS_Store
+**/.DS_Store
